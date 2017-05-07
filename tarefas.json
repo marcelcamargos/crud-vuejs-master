@@ -1,5 +1,5 @@
 {
-  "breweries": [
+  "tarefas": [
     {
       "id": 1,
       "name": "DAO",
@@ -104,7 +104,7 @@
     },
     {
       "id": 28,
-      "name": "Matemática",
+      "name": "Matemática Avançada",
       "code": 40508,
       "filepath": "",
       "descript": "Estudar matemática na próxima segunda",
