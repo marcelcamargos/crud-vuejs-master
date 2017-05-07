@@ -1,0 +1,292 @@
+{
+  "breweries": [
+    {
+      "id": 1,
+      "name": "DAO",
+      "code": 78745,
+      "filepath": "",
+      "descript": "Criar persistência",
+      "add_user": 0,
+      "last_mod": "2010-07-22 05:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 2,
+      "name": "VUE",
+      "code": 94107,
+      "filepath": "",
+      "descript": "Estudar Vue.js",
+      "add_user": 0,
+      "last_mod": "2010-10-24 13:54:07",
+      "data_hora_insercao": "2017-07-22 20:00:20"
+    },
+    {
+      "id": 10,
+      "name": "NODE",
+      "code": 70420,
+      "filepath": "",
+      "descript": "Usar node no CRUD.",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 11,
+      "name": "vue-cli",
+      "code": "",
+      "filepath": "",
+      "descript": "entender o vue-cli",
+      "add_user": 0,
+      "last_mod": "2017-07-22 00:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 14,
+      "name": "Spring",
+      "code": 68130,
+      "filepath": "",
+      "descript": "integrar spring e vue",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 15,
+      "name": "Tarefas",
+      "filepath": "",
+      "descript": "Cadastrar tarefas",
+      "add_user": 0,
+      "last_mod": "2010-07-22 15:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 17,
+      "name": "Pesquisa de tarefa",
+      "code": 99801,
+      "filepath": "",
+      "descript": "Realizar pesquisa de tarefas",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 20,
+      "name": "Webpack",
+      "code": 53704,
+      "country": "United States",
+      "phone": 6086633926,
+      "filepath": "",
+      "descript": "usar padrão webpack",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 23,
+      "name": "Moment",
+      "code": 4103,
+      "filepath": "",
+      "descript": "Usar moment",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 25,
+      "name": "Flexbox",
+      "code": 18101,
+      "country": "United States",
+      "filepath": "",
+      "descript": "Usar flexbox na grid",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 28,
+      "name": "Matemática",
+      "code": 40508,
+      "filepath": "",
+      "descript": "Estudar matemática na próxima segunda",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 35,
+      "name": "Português",
+      "code": 1002,
+      "filepath": "",
+      "descript": "Estudar Português hoje.",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 38,
+      "name": "Grafos",
+      "code": 98221,
+      "country": "United States",
+      "filepath": "",
+      "descript": "Estudar grafos",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 42,
+      "name": "Estruturas de dados",
+      "code": 4849,
+      "filepath": "",
+      "descript": "Fazer trabalho final de estruturas de dados 2",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 43,
+      "name": "Linguagens formais e autômatos",
+      "code": 53703,
+      "filepath": "",
+      "descript": "Fazer exercícios de linguagens formais e autômatos.",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 44,
+      "name": "Medicina",
+      "code": 63118,
+      "filepath": "",
+      "descript": "Prestar vestibular para medicina na próxima semana.",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 45,
+      "name": "Startup Weekend",
+      "code": 17110,
+      "filepath": "",
+      "descript": "Pensar numa ideia de negócio para apresentar no startup weekend.",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 51,
+      "name": "Programador no startup weekend",
+      "code": 28804,
+      "filepath": "",
+      "descript": "Fazer cadastro no startup weekend como programador.",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 55,
+      "name": "Empreendedorismo",
+      "code": 4609,
+      "filepath": "",
+      "descript": "Visitar feira de empreendedorismo ",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 56,
+      "name": "Trigonometria",
+      "code": 48207,
+      "filepath": "",
+      "descript": "Resolver exercicios de trigonometria",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 62,
+      "name": "Escola",
+      "code": 80303,
+      "filepath": "",
+      "descript": "Buscar irmao na escola.",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 82,
+      "name": "Exemplos",
+      "code": 98108,
+      "filepath": "",
+      "descript": "Buscar exemplos na web.",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 87,
+      "name": "Hibernate",
+      "code": 17701,
+      "filepath": "",
+      "descript": "Verificar se hibernate será utlizado",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 90,
+      "name": "Casa",
+      "code": 40202,
+      "filepath": "",
+      "descript": "Desenvolver crud em casa",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 98,
+      "name": "Interface",
+      "code": "",
+      "filepath": "",
+      "descript": "Criar com interface com Vue.js",
+      "add_user": 0,
+      "last_mod": "2010-07-22 20:00:20",
+      "data_hora_insercao": "2010-07-22 20:00:20"
+    },
+    {
+      "id": 99,
+      "name": "Persistência",
+      "code": "",
+      "filepath": "",
+      "descript": "Usar hibernate na persistência.",
+      "add_user": 0,
+      "last_mod": "2017-05-05 18:00:20",
+      "data_hora_insercao": "2017-05-05 17:58:20"
+    },
+    {
+      "id": 100,
+      "name": "Banco de Dados",
+      "code": 49053,
+      "filepath": "",
+      "descript": "Escolher mongodb ou mysql ",
+      "add_user": 0,
+      "last_mod": "2017-07-22 17:58:20",
+      "data_hora_insercao": "2017-05-05 18:00:20"
+    },
+    {
+      "name": "Marcel",
+      "code": 304050,
+      "descript": "marcel in test",
+      "id": 103,
+      "last_mod": "2017-07-22 17:58:20",
+      "data_hora_insercao": "2017-05-05 18:00:20"
+    },
+    {
+      "name": "joe",
+      "descript": "desenvolver a camada de persistencia.",
+      "id": 104,
+      "last_mod": "2017-07-22 17:58:20",
+      "data_hora_insercao": "2017-05-05 18:00:20"
+    }
+  ]
+}
