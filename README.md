@@ -8,6 +8,9 @@
 # global install
 npm install -g json-server
 
+# install vue-cli
+npm install -g vue-cli
+
 git clone https://github.com/marcelcamargos/crud-vuejs-master.git 
 cd crud-vuejs-master
 
