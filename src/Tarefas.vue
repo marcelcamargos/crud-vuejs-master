@@ -6,14 +6,14 @@
       <div class="column is-5">
         <p class="control has-addons">
           <input class="input is-expanded" type="text" placeholder="Procure pelo nome ou descrição" v-model="search">
-          <a class="button is-info" @click.prevent="searchBreweries">Pesquisar</a>
+          <a class="button is-info" @click.prevent="searchTarefas">Pesquisar</a>
         </p>
       </div>
       <div class="column is-6">
          
       </div>
       <div class="column is-1">
-        <a class="button is-info" @click.prevent="newBreweries">Novo</a>
+        <a class="button is-info" @click.prevent="newTarefa">Novo</a>
       </div>
 
     </div>
@@ -29,17 +29,17 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="brewery in breweries">
-            <td>{{brewery.name}}</td>
-			<td>{{brewery.descript}}</td>
-			<td>{{moment(brewery.last_mod).format('MMMM Do YYYY, h:mm:ss a')}}</td>
-			<td>{{moment(brewery.data_hora_insercao).format('MMMM Do YYYY, h:mm:ss a')}}</td>
+          <tr v-for="tarefa in tarefas">
+            <td>{{tarefa.name}}</td>
+			<td>{{tarefa.descript}}</td>
+			<td>{{moment(tarefa.last_mod).format('MMMM Do YYYY, h:mm:ss a')}}</td>
+			<td>{{moment(tarefa.data_hora_insercao).format('MMMM Do YYYY, h:mm:ss a')}}</td>
             <td class="is-icon">
 
-              <a href="#" @click.prevent="editBrewery(brewery)">
+              <a href="#" @click.prevent="editTarefa(tarefa)">
                 <i class="fa fa-edit"></i>
               </a>
-              <a href="#" @click.prevent="removeBrewery(brewery)">
+              <a href="#" @click.prevent="removeTarefa(tarefa)">
                 <i class="fa fa-trash"></i>
               </a>
             </td>
@@ -51,7 +51,7 @@
   </div>
 </div>
 
-<div id="modal_brewery" class="modal" :class="{'is-active':showModal}">
+<div id="modal_tarefa" class="modal" :class="{'is-active':showModal}">
   <div class="modal-background"></div>
   <div class="modal-card">
     <header class="modal-card-head">
@@ -87,7 +87,7 @@
 	
     </section>
     <footer class="modal-card-foot">
-      <a class="button is-primary" @click.prevent="saveBrewery">Salvar</a>
+      <a class="button is-primary" @click.prevent="saveTarefa">Salvar</a>
       <a class="button" @click.prevent="showModal=false">Cancelar</a>
     </footer>
   </div>
@@ -104,7 +104,7 @@
         isLoading: false,
         title: 'Lista de Tarefas',
         search: '',
-        breweries: [],
+        tarefas: [],
         page: 1,
         total: 0,
         selected: {},
@@ -118,7 +118,7 @@
     methods: {
       onChangePage(page){
         this.page = page
-        this.loadBreweries()
+        this.loadTarefas()
       },
       showLoading(){
         this.isLoading=true;
@@ -126,7 +126,7 @@
       hideLoading(){
         this.isLoading=false;
       },
-      loadBreweries(){
+      loadTarefas(){
 
         let t = this
         this.showLoading()
@@ -139,9 +139,9 @@
           qString = `&q=${this.search}`
         }
 
-        this.$http.get(`/breweries?_start=${start}&_end=${end}${qString}`).then(
+        this.$http.get(`/tarefas?_start=${start}&_end=${end}${qString}`).then(
          response=>{
-           t.breweries = response.json()
+           t.tarefas = response.json()
            t.total = response.headers['X-Total-Count']
          },
          error=>{
@@ -151,21 +151,21 @@
         })
 
        },
-       searchBreweries(){
-        this.loadBreweries()
+       searchTarefas(){
+        this.loadTarefas()
        },
-       newBreweries(){
+       newTarefa(){
         this.selected={}
         this.showModal = true;
        },
-       editBrewery(brewery){
-        this.selected=brewery
+       editTarefa(tarefa){
+        this.selected=tarefa
         this.showModal = true;
        },
-       removeBrewery(brewery){
+       removeTarefa(tarefa){
         let self = this;
         swal({  title: "Você tem certeza?",
-                 text: `Deseja apagar "${brewery.name}"`,   
+                 text: `Deseja apagar "${tarefa.name}"`,   
                  type: "warning",   
                  showCancelButton: true,   
                  confirmButtonColor: "#DD6B55",   
@@ -174,17 +174,17 @@
                  showLoaderOnConfirm: true,  
                  closeOnConfirm: false }, function(){   
                   
-                  self.$http.delete(`/breweries/${brewery.id}`).then(
+                  self.$http.delete(`/tarefas/${tarefa.id}`).then(
                     result=>{
                       swal("Tarefa removida!")
-                      self.loadBreweries()
+                      self.loadTarefas()
                     })
         });
 
        },
-       saveBrewery(){
+       saveTarefa(){
         if (this.selected.id!=null){  //EDIT
-          this.$http.put(`/breweries/${this.selected.id}`,this.selected).then(
+          this.$http.put(`/tarefas/${this.selected.id}`,this.selected).then(
             response=>{
               this.$set('selected',{})
               this.$set('showModal',false)
@@ -193,12 +193,12 @@
               console.error(error)
             }
             ).finally(
-              this.loadBreweries()
+              this.loadTarefas()
             )
           }
           else
           { //NEW
-            this.$http.post(`/breweries`,this.selected).then(
+            this.$http.post(`/tarefas`,this.selected).then(
             response=>{
               this.$set('selected',{})
               this.$set('showModal',false)
@@ -207,7 +207,7 @@
               console.error(error)
             }
             ).finally(
-              this.loadBreweries()
+              this.loadTarefas()
             )
           }
        },
@@ -219,7 +219,7 @@
 		}
      },
      created(){
-      this.loadBreweries();
+      this.loadTarefas();
     },
 	filters: {
 		moment: function (date) {
