@@ -17,6 +17,15 @@ cd crud-vuejs-master
 # install dependencies
 npm install
 
+# install moment
+npm install moment
+
+# install sweethalert
+npm install sweetalert -S
+
+# install font-awesome
+npm i -S vue-resource bulma font-awesome
+
 # serve with hot reload at localhost:8080
 npm run dev
 ```
